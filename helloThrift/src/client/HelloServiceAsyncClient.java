@@ -52,7 +52,7 @@ public class HelloServiceAsyncClient {
             System.out.println("Client calls ....."); 
             MethodCallback callBack = new MethodCallback(); 
           //  asyncClient.helloString("larry", callBack); 
-            asyncClient.helloInt(100, callBack);
+            asyncClient.helloInt(1000, callBack);
             Object res = callBack.getResult(); 
             while (res == null) {
                 res = callBack.getResult(); 
